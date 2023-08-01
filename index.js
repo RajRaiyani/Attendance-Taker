@@ -127,6 +127,17 @@ function getFocus(){
 }
 
 
+function copyText(){
+    let tempTextarea = document.createElement("textarea");
+    document.body.appendChild(tempTextarea);
+    tempTextarea.value = content.innerHTML;
+    tempTextarea.select();
+    document.execCommand("copy");
+    document.body.removeChild(tempTextarea);
+    content.style.boxShadow = '0 0 10px green';
+    setTimeout(()=>{content.style.boxShadow = "0 0 0 0"},1000);
+}
+
 
 
 
