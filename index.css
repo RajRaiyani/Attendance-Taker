@@ -57,7 +57,7 @@ input {
     background-color: red;
 }
 
-#clear-btn,#print-btn,#edit-btn{
+#clear-btn,#print-btn,#edit-btn,#copy-btn{
     font-size: 1.5rem;
     padding: 0.5rem 1.2rem;
     margin: 1rem;
@@ -79,17 +79,17 @@ input {
   background-color: white;
   color: black;
 }
-
-#clear-btn:active{
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+#copy-btn{
+  border: 1px solid #7cc529;
+  background-color: white;
+  color: #7cc529;
 }
 
-#print-btn:active{
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
-}
-#edit-btn:active{
+
+#edit-btn:active,#print-btn:active,#clear-btn:active,#copy-btn:active{
   box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
 }
+
 
 footer{
   width: 100%;
